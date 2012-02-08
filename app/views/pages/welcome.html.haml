@@ -3,3 +3,13 @@
 
 = image_tag('lyche-stemning-01.png')
 
+%h1 Velkommen til Lyche
+
+%p
+  Bar, kjøkken, vin, mat, behagelig atmosfære, spennende, unikt. På Lyche vil alle kunne finne sin favorittplass uansett om man er mange eller få, skal spise eller drikke, er på date eller for å møte venner. Både på en rolig tirsdag eller festfylt lørdag. Hele uka igjennom tilbys det behagelig bakgrunnsmusikk, gode sofaer, myke stoler i et lokale preget av farger og kontraster, og som er klassisk og moderne på samme tid. På Lyche koser du deg hele uka igjennom.
+
+- content_for :sidebar do
+  = render 'sidebar/hours'
+  = render 'sidebar/featured'
+  = render 'sidebar/menu'
+  = render 'sidebar/facebook'

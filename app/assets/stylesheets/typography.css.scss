@@ -9,6 +9,11 @@
   src: url(/fonts/UniversLTStd-Light.otf);
 }
 
+@font-face {
+  font-family: Bitter;
+  src: url(/fonts/Bitter-Bold.ttf);
+}
+
 body {
   font-family: Univers, arial, sans-serif;
   font-size: 14px;
@@ -21,6 +26,14 @@ body {
 
 #foot {
   font-family: arial;
+}
+
+h1, h2 {
+  font-family: Bitter, serif;
+}
+h1 {
+  font-size: 48px;
+  margin: .1em 0 .5em;
 }
 
 a {

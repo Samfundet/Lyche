@@ -16,7 +16,7 @@ module LayoutHelper
     content_for(:pageclass) { cls } unless cls.nil?
     
     cls = content_for(:pageclass)
-    cls.present? ? cls : "twocol"
+    cls.present? ? cls : "normal"
   end
   
 end
