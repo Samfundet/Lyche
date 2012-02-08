@@ -13,9 +13,11 @@ body {
     #head {
       padding-top: 40px;
       position: relative;
-      margin-bottom: 1.5em;
+      margin-bottom: 2em;
       
       .logo {
+        position: relative;
+        z-index: 10;
         margin: 0 auto;
         padding-right: 23px;
         width: 272px;
@@ -57,11 +59,50 @@ body {
             display: block;
             float: left;
             
-            a:hover, &.active a {
+            a:hover, a.active {
               color: $primary;
             }
           }
         }
+      }
+    }
+    
+    #body, #foot {
+      padding: 0 32px;
+    }
+    
+    #body {
+      
+    }
+    
+    #foot {
+      text-align: center;
+      padding-bottom: 1em;
+      
+      p {
+        clear: both;
+        margin: 1em 0;
+      }
+      
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        
+        li {
+          margin: 0;
+        }
+      }
+      
+      .left, .right {
+        text-align: left;
+        width: 50%;
+        float: left;
+        margin-top: -10px;
+      }
+      .right {
+        float: right;
+        width: 35%;
       }
     }
   }

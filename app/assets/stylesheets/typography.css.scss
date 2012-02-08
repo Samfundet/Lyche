@@ -10,13 +10,17 @@
 }
 
 body {
-  font-family: Univers;
+  font-family: Univers, arial, sans-serif;
   font-size: 14px;
 }
 
 #mainmenu {
-  font-family: UniversCondensed, sans-serif;
+  font-family: UniversCondensed, 'arial', sans-serif;
   font-size: 18px;
+}
+
+#foot {
+  font-family: arial;
 }
 
 a {
@@ -24,6 +28,10 @@ a {
   color: $primary;
 }
 
-#head a {
+#head a, #foot a {
   color: #fff;
+}
+
+strong {
+  font-weight: bold;
 }

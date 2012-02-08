@@ -8,6 +8,7 @@
  *= depend_on typography
  *
  *= depend_on layout
+ *= depend_on shared
  *= depend_on pages
  *
  *= require_self
@@ -18,4 +19,5 @@
 @import "typography";
 
 @import "layout";
+@import "shared";
 @import "pages";
