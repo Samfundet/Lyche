@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: UniversCondensed;
+  src: url(/fonts/UniversLTStd-LightCn.otf);
+}
+
+@font-face {
+  font-family: Univers;
+  src: url(/fonts/UniversLTStd-Light.otf);
+}
+
+body {
+  font-family: Univers;
+  font-size: 14px;
+}
+
+#mainmenu {
+  font-family: UniversCondensed, sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+}
+
+#head a {
+  color: #fff;
+}
