@@ -25,10 +25,16 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'spork'
+  gem 'ZenTest'
+end
 
 group :test do
   # Pretty printed test output
