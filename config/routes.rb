@@ -10,3 +10,4 @@ Lyche::Application.routes.draw do
   root :to => 'pages#welcome'
   
 end
+ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
