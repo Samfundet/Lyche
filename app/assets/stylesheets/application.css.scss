@@ -10,6 +10,7 @@
  *= depend_on layout
  *= depend_on shared
  *= depend_on pages
+ *= depend_on menu
  *
  *= require_self
 */
@@ -21,3 +22,4 @@
 @import "layout";
 @import "shared";
 @import "pages";
+@import "menu";

@@ -1,5 +1,9 @@
 - title "Meny"
 - pageclass "fullwidth"
 
-
-Vi har en meny!
+.menu
+  - @columns.each do |name, items|
+    %ol{ class: "menucol #{name.to_s}" }
+      - for item in items
+        %li
+          = render item  

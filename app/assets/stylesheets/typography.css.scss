@@ -10,6 +10,11 @@
 }
 
 @font-face {
+  font-family: UniversBold;
+  src: url(/fonts/UniversLTStd-Bold.otf);
+}
+
+@font-face {
   font-family: Bitter;
   src: url(/fonts/Bitter-Bold.ttf);
 }
@@ -31,6 +36,12 @@ body {
 h1, h2 {
   font-family: Bitter, serif;
 }
+h3 {
+  font-family: UniversBold, arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 h1 {
   font-size: 48px;
   margin: .1em 0 .5em;
