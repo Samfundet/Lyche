@@ -1,4 +1,8 @@
 
+*[data-href] {
+  cursor: pointer;
+}
+
 hr {
   height: 37px;
   background: url(/assets/hr-bg.png) repeat-x center center;
@@ -7,4 +11,24 @@ hr {
 
 br {
   clear: both;
+}
+
+form.simple_form {
+  .input {
+    margin: 1em 0;
+  }
+  
+  label {
+    display: block;
+  }
+  input {
+    display: block;
+    width: 120px;
+    
+    &.string, &.password, &.text {
+      border: 1px solid #777;
+      padding: 5px;
+      background: #333;
+    }
+  }
 }

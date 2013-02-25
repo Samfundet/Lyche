@@ -8,7 +8,7 @@ body {
  
 #page {
   width: 879px;
-  background: #000;
+  background: rgba(0, 0, 0, 0.7);
   margin: 0 auto;
 }
     
@@ -83,6 +83,57 @@ body {
     
     #page.fullwidth & {
       display: none;
+    }
+    
+    .sidebar-box {
+      height: $sidebar-box-height - 2 * 2;
+      
+      &.plain {
+        height: auto;
+      }
+      
+      position: relative;
+      margin: 0 0 15px;
+      padding: 2px 6px;
+      background: no-repeat top left;
+      
+      &.align-right {
+        text-align: right;
+      }
+      
+      a {
+        color: white;
+      }
+      
+      .inner {
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        right: 10px;
+        font-family: UniversCondensed;
+        font-style: italic;
+        
+        h3, p {
+          text-shadow: 0 0 8px #000;
+          line-height: .9;
+        }
+        
+        h3 {
+          margin: 0;
+          font-size: 32px;
+          font-family: UniversCondensed;
+          text-transform: lowercase;
+          font-weight: normal;
+        }
+        p {
+          margin: 0;
+          font-size: 18px;
+        }
+      }
+      
+      &.plain .inner {
+        position: static;
+      }
     }
   }
   

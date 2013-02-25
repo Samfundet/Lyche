@@ -1,0 +1,8 @@
+= sidebar_box class: "plain" do
+  %h3 Åpningstider
+  %br
+  %table.opening-hours
+    - days_of_week.each do |day|
+      %tr
+        %th= l(day, format: "%A").capitalize
+        %td= opening_hours[day.wday].map{|n| sprintf("%02d", n)}.join(" - ")

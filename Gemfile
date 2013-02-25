@@ -21,12 +21,17 @@ end
 
 gem 'jquery-rails'
 gem 'haml'
+gem 'simple_form'
+gem 'acts_as_list'
 
 # Translation
 gem 'rails-translate-routes'
 
+# Auth
+gem 'authlogic'
+
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+# gem 'bcrypt-ruby', require: 'bcrypt'
 
 # Use unicorn as the web server
 # gem 'unicorn'

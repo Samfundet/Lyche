@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120210010042) do
+ActiveRecord::Schema.define(:version => 20120314215806) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -25,12 +25,23 @@ ActiveRecord::Schema.define(:version => 20120210010042) do
     t.integer  "position"
     t.text     "description"
     t.integer  "member_price"
-    t.integer  "price"
+    t.integer  "regular_price"
     t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "dishes", ["category_id"], :name => "index_dishes_on_category_id"
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token",   :null => false
+    t.string   "single_access_token", :null => false
+    t.string   "perishable_token",    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

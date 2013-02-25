@@ -1,7 +1,26 @@
-
-= image_tag('lyche-stemning-02.png')
+- title "Bordbestilling"
 
 %h1 Bordbestilling
 
-= form_tag '', method: :post do
-  Bordbestillingsskjema kommer her.
+%p
+  For å bestille bord, vennligst send en mail til
+  #{link_to("lyche@samfundet.no", "mailto:lyche@samfundet.no?subject=Bordbestilling")}.
+
+%p
+  Vi ser helst at reservasjoner skjer minst en dag i forveien.
+
+%p
+  I dag, #{l(Date.today, format: "%A")}, holder vi åpent
+  %em
+    fra #{opening_hours[Date.today.wday][0]}
+    til #{sprintf("%02d", opening_hours[Date.today.wday][1])}.
+
+%h3 Kapasitet
+%p
+  I Lyche Bar og Kjøkken har vi kapasitet på 120 personer fordelt i vårt lokale.  Ved bordreservasjoner har vi mulighet til å plassere grupper på opptil 20 personer på samme bord. Ved større reservasjoner vil vi forsøke å plassere dere i samme del av lokalet.
+
+- content_for :sidebar do
+  = render 'sidebar/actual_hours'
+
+-# = form_tag '', method: :post do
+-#   Bordbestillingsskjema kommer her.

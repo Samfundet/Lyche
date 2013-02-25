@@ -32,12 +32,12 @@
       %section#foot
         %hr
         .left
-          %strong= link_to "Sitemap", '#'
+          %strong= link_to "Logg inn", '#' # new_user_session_path
         .right
           %ul
             %li
               %strong Foto:
-              = link_to "Under Dusken", 'http://underdusken.no'
+              #{link_to "Under Dusken", 'http://underdusken.no'} og #{link_to "Fotogjengen", "http://fg.samfundet.no"}
             %li
               %strong Teknisk ansvarlig:
               = link_to "Jonas Myrlund", 'mailto:ksg-gjengsjef@samfundet.no'
