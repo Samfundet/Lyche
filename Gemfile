@@ -8,7 +8,7 @@ gem 'rails', '3.1.3'
 gem 'sqlite3'
 
 group :production do
-  gem 'mysql2'
+  gem 'pg'
 end
 
 # Gems used only for assets and not required
@@ -38,7 +38,7 @@ gem 'authlogic'
 
 # Deploy with Capistrano
 gem 'capistrano'
-gem 'therubyracer'
+gem 'therubyracer', require: 'v8'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
@@ -51,5 +51,5 @@ end
 
 group :test do
   # Pretty printed test output
-  gem 'turn', '~> 0.8.3', :require => false
+  gem 'turn', '~> 0.8.3', require: false
 end
