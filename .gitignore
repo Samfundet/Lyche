@@ -20,3 +20,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore locally installed gems and binaries
+/vendor/bundle/
+/vendor/ruby/
