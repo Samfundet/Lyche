@@ -11,13 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120314215806) do
+ActiveRecord::Schema.define(:version => 20120210010042) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
     t.integer  "position"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "dishes", :force => true do |t|
@@ -27,21 +27,10 @@ ActiveRecord::Schema.define(:version => 20120314215806) do
     t.integer  "member_price"
     t.integer  "regular_price"
     t.integer  "category_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   add_index "dishes", ["category_id"], :name => "index_dishes_on_category_id"
-
-  create_table "users", :force => true do |t|
-    t.string   "email"
-    t.string   "crypted_password"
-    t.string   "password_salt"
-    t.string   "persistence_token",   :null => false
-    t.string   "single_access_token", :null => false
-    t.string   "perishable_token",    :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
 end
