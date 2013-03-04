@@ -33,8 +33,6 @@ gem 'authlogic'
 # Use unicorn as the web server
 # gem 'unicorn'
 
-# Deploy with Capistrano
-gem 'capistrano'
 gem 'therubyracer', require: 'v8'
 
 # To use debugger
