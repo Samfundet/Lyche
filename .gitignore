@@ -21,6 +21,9 @@
 /log/*.log
 /tmp
 
+# Don't keep compiled assets in SCM
+/public/assets/
+
 # Ignore locally installed gems and binaries
 /vendor/bundle/
 /vendor/ruby/
