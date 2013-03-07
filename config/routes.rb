@@ -6,6 +6,7 @@ Lyche::Application.routes.draw do
   get 'information' => 'pages#information'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
+  post 'contact' => 'contact#create'
   
   root :to => 'pages#welcome'
   

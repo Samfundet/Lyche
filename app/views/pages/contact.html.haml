@@ -2,4 +2,17 @@
 
 %h1 Ta kontakt
 
-%p!= "Her kommer det et fint skjema som bare sender en mail til #{link_to "lyche@samfundet.no", "mailto:lyche@samfundet.no"}, men som får det hele til å virke proffere enn det er."
+= form_for @message, url: contact_path do |form|
+  = form.label "Ditt navn"
+  = form.text_field :name
+
+  = form.label "Din epostadresse"
+  = form.text_field :email
+
+  = form.label "Hva gjelder det?"
+  = form.text_field :subject
+
+  = form.label "Hva har du å melde?"
+  = form.text_area :body
+
+  = form.submit "Send til Lyche"

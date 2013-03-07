@@ -1,4 +1,18 @@
+div.notice {
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    background: rgba(0, 255, 0, 0.5);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    color: #fff;
+}
 
+div.alert {
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    background: rgba(255, 0, 0, 0.5);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    color: #fff;
+}
 *[data-href] {
   cursor: pointer;
 }
@@ -11,24 +25,4 @@ hr {
 
 br {
   clear: both;
-}
-
-form.simple_form {
-  .input {
-    margin: 1em 0;
-  }
-  
-  label {
-    display: block;
-  }
-  input {
-    display: block;
-    width: 120px;
-    
-    &.string, &.password, &.text {
-      border: 1px solid #777;
-      padding: 5px;
-      background: #333;
-    }
-  }
 }

@@ -1,18 +1,25 @@
 class PagesController < ApplicationController
+
   def welcome
   end
+
   def menu
     @categories = Category.all
     
     generate_menu
   end
+
   def reservation
   end
+
   def information
   end
+
   def about
   end
+
   def contact
+    @message = Message.new # for the contact email
   end
   
   def admin
