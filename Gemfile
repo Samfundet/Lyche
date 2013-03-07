@@ -4,7 +4,6 @@ gem 'rails', '3.2.12'
 
 gem 'jquery-rails'
 gem 'haml'
-gem 'simple_form'
 gem 'acts_as_list'
 
 # Translation
