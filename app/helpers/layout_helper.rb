@@ -22,7 +22,7 @@ module LayoutHelper
   end
   
   def sidebar_box(options={}, &block)
-    background = image_path(options[:background])
+    background = image_path(options[:background]) if options[:background]
     classes = (options[:class] || "").split(" ")
     classes << "sidebar-box"
     classes << "align-right" if options[:right]
