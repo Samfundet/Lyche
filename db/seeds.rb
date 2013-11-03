@@ -32,6 +32,7 @@ main.dishes.create(title: "Heldiggrisen Babe", description: "BBQ­glasert skinke
 main.dishes.create(title: "Heisann Portobello", description: "Ovnsbakt portobellosopp. Fylt med tomat­ og quinoasaus, og gratinert med manchego. Serveres med søtpotetpuré og –timbal, og soltørket tomat. Vegetar.", member_price: 99, regular_price: 119)
 main.dishes.create(title: "Frisk falafelfryd", description: "Salat med falafler, sprøstekt bacon, marinerte kikerter og sukkererter. Serveres med focaccia og aioli.", member_price: 79, regular_price: 99)
 main.dishes.create(title: "Månedens suppe", description: "Hver måned disker Lychekjøkkenet opp med en ny suppe. Serveres med focaccia og smør. Kan ofte fås som vegetar, spør i baren.", member_price: 59, regular_price: 75)
+main.dishes.create(title: "Planken", description: "Ekstra vellagret Grotteost fra Hitra, Kraftkar fra Levanger, hjemmelaget ramsløks- og trøffelkrem, fenalår og biffchorizo fra Røros, samt hjemmelaget gravlaks med dijonkrem. Til slutt et spansk karvebrød på siden!", member_price: 79, regular_price: 89)
 
 desserts = Category.find_by_title("Desserter")
 desserts.dishes.create(title: "Karl Oris favoritt", description: "En mektig sjokoladeterrin fylt med Oreokjeks. Toppes med syrlig ostekrem og bringebærcoulis.", member_price: 49, regular_price: 59)
