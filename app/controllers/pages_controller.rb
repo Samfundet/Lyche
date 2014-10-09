@@ -32,7 +32,13 @@ class PagesController < ApplicationController
       # Column generation algorithm
       @column_names = [:left, :center, :right]
 
-      category_weight = 2
+      # The category weight used to be 2, but this worked poorly when the number
+      # of categories and dishes changed. Setting it to 0 currently works,
+      # but I'm leaving the variable in case a later change requires weighted
+      # categories again.
+      #   -- andereld
+      category_weight = 0
+
       items_per_column = ((Category.count * category_weight + Dish.count).to_f / @column_names.length).ceil
 
       logger.debug "[Menu-generation] Items per column: #{items_per_column}"
